@@ -1,0 +1,64 @@
+body {
+  background: url('/static/images/background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#data-container {
+  width: 80%;
+  height: auto;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+}
+
+.message {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background-color: white;
+  color: black;
+  position: relative;
+}
+
+.message-left {
+  border: 2px solid #0d6efd;
+  align-self: flex-start;
+}
+
+.message-left::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 2%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #0d6efd transparent transparent transparent;
+}
+
+.message-right {
+  border: 2px solid #fd7e14;
+  align-self: flex-end;
+}
+
+.message-right::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 2%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fd7e14 transparent transparent transparent;
+}
