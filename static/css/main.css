@@ -10,6 +10,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: monospace;
 }
 
 #data-container {
@@ -20,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 15%;
+  top: 10%;
 }
 
 .message {
@@ -31,6 +32,8 @@ body {
   background-color: white;
   color: black;
   position: relative;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .message-left {
@@ -41,9 +44,9 @@ body {
 .message-left::after {
   content: "";
   position: absolute;
-  top: 100%;
-  left: 2%;
-  border-width: 10px;
+  bottom: -60px;
+  left: 12%;
+  border-width: 60px 20px 0;
   border-style: solid;
   border-color: #0d6efd transparent transparent transparent;
 }
@@ -56,9 +59,9 @@ body {
 .message-right::after {
   content: "";
   position: absolute;
-  top: 100%;
-  right: 2%;
-  border-width: 10px;
+  bottom: -60px;
+  right: 12%;
+  border-width: 60px 20px 0; /* Increase first value to make the triangle taller */
   border-style: solid;
   border-color: #fd7e14 transparent transparent transparent;
 }

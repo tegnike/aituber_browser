@@ -17,5 +17,5 @@ function fetchData() {
     .catch(error => console.error('Error:', error));
 }
 
-// Fetch data every 10 seconds
-setInterval(fetchData, 10000);
+// Fetch data every 2 seconds
+setInterval(fetchData, 2000);
